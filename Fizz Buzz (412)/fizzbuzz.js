@@ -2,6 +2,7 @@
 //Description:
 //If a number is divisible by 3 print fizz, if divisible by 5 print buzz,
 //if divisible by both 3 and 5 print FizzBuzz
+//Contributor: Seth Perritt
 
 const fizzBuzz = function (n) {
   //Array to store new values in
