@@ -1,0 +1,45 @@
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
+class Solution:
+    def traverseNodes(node):
+        pass
+    def addTwoNumbers(self, l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:
+        #l1 has an integer #l2 has an integer
+        #add the integer in l1 and l2, reverse order
+        l3 = tempNode = ListNode()
+        #traverse the list
+        while l1 != None:
+            tempNode.val = l1.val
+            l1 = l1.next
+            tempNode.next = l1
+            tempNode = tempNode.next
+
+        tempNode = l3
+        carry = 0
+        nodeSum = 0
+        
+        while l2 != None:                   
+            nodeSum = (tempNode.val + l2.val + carry) % 10
+            carry = (tempNode.val + l2.val + carry) // 10
+            tempNode.val = nodeSum
+            l2 = l2.next
+            if tempNode.next == None and (carry > 0 or l2 != None):
+                tempNode.next = ListNode()
+            tempNode = tempNode.next
+        
+        while carry > 0:
+            nodeSum = (tempNode.val + carry) % 10
+            carry = (tempNode.val + carry) // 10
+            tempNode.val = nodeSum
+            if tempNode.next == None and carry > 0:
+                tempNode.next = ListNode()
+            tempNode = tempNode.next 
+
+        return l3
+        
+            
+
+        
