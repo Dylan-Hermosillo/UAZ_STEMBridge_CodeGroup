@@ -10,7 +10,7 @@ Hunter Copening | Computer Science
 
 LEVI | COMPUTER SCIENCE
 
-Oscar Gastelum | Cyber Operations (Engineering)
+[Oscar Gastelum](https://www.linkedin.com/in/oscargastelum/) | Cyber Operations (Engineering)
 
 [Seth Perritt](https://github.com/Durtyburd/Durtyburd) | Software Engineering
 
